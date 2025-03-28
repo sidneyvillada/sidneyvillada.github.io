@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to right, #111, #222, #111); /* Degradado oscuro */
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.08s;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    background: #ff9900;
+}
+
+.inicio-content {
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.btn-freefire {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff9900;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-freefire:hover {
+    background: #cc7700;
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 250px;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto-img {
+    width: 60%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.producto-info {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-comprar {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-comprar:hover {
+    background: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.email a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+.email a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .productos-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .producto {
+        max-width: 90%;
+    }
+    
+    .producto-img {
+        width: 80%;
+    }
+}
+.inicio-content h2 {
+    font-size: 28px; /* Reduce el tamaño del título */
+    font-family: 'Roboto', sans-serif; /* Cambia la tipografía */
+    font-weight: bold;
+    color: rgb(248, 238, 238);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.inicio-content p {
+    font-size: 18px; /* Reduce el tamaño del párrafo */
+    font-family: 'Roboto', sans-serif; /* Mismo estilo */
+    color: rgb(236, 228, 228);
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+h2 {
+    color: white !important; /* Fuerza el color blanco */
+    font-size: 22px; /* Ajusta el tamaño */
+    text-align: center; /* Centra el texto */
+}
